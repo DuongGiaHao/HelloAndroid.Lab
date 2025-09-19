@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Log.d("MainActivity", "Button was clicked");
         int id = v.getId();
         if (id == R.id.button0 || id == R.id.button1 || id == R.id.button2 || id == R.id.button3 ||
             id == R.id.button4 || id == R.id.button5 || id == R.id.button6 || id == R.id.button7 ||
